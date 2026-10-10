@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://bnj2paprp86en"]
+
+[node name="Background" type="Node2D" unique_id=506688542]
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1927849680]
+offset_right = 1152.0
+offset_bottom = 648.0
+mouse_filter = 2
+color = Color(0.35834897, 0.45385754, 0.7628043, 1)

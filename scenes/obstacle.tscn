@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://doido0b03l2jx"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wvhbo"]
+size = Vector2(64, 64)
+
+[node name="obstacle" type="StaticBody2D" unique_id=1755937890]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1593075693]
+shape = SubResource("RectangleShape2D_wvhbo")
+
+[node name="Polygon2D" type="Polygon2D" parent="." unique_id=613951445]
+color = Color(0.7046065, 0.5398868, 0.3183869, 1)
+polygon = PackedVector2Array(-32, -32, 32, -32, 32, 32, -32, 32)

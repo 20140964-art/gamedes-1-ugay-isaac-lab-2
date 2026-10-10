@@ -1,0 +1,41 @@
+[gd_scene format=3 uid="uid://ckyek2stcqki8"]
+
+[ext_resource type="PackedScene" uid="uid://bnj2paprp86en" path="res://scenes/background.tscn" id="1_jyhfs"]
+[ext_resource type="PackedScene" uid="uid://dh0ymewrumi1g" path="res://scenes/player.tscn" id="2_tbgi4"]
+[ext_resource type="PackedScene" uid="uid://dp3ldlly1r7sf" path="res://scenes/enemy.tscn" id="3_tefeu"]
+[ext_resource type="PackedScene" uid="uid://doido0b03l2jx" path="res://scenes/obstacle.tscn" id="4_o6xl0"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wvhbo"]
+size = Vector2(1152, 40)
+
+[node name="Main" type="Node2D" unique_id=2143155253]
+
+[node name="Background" parent="." unique_id=506688542 instance=ExtResource("1_jyhfs")]
+
+[node name="Player" parent="." unique_id=695172104 instance=ExtResource("2_tbgi4")]
+position = Vector2(150, 500)
+
+[node name="Enemy" parent="." unique_id=1377766417 instance=ExtResource("3_tefeu")]
+position = Vector2(650, 576)
+
+[node name="obstacle" parent="." unique_id=1755937890 instance=ExtResource("4_o6xl0")]
+position = Vector2(350, 576)
+
+[node name="obstacle2" parent="." unique_id=1916104379 instance=ExtResource("4_o6xl0")]
+position = Vector2(414, 576)
+
+[node name="obstacle3" parent="." unique_id=1162792669 instance=ExtResource("4_o6xl0")]
+position = Vector2(478, 576)
+
+[node name="Floor" type="StaticBody2D" parent="." unique_id=1611243691]
+position = Vector2(576, 628)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Floor" unique_id=648367355]
+shape = SubResource("RectangleShape2D_wvhbo")
+
+[node name="ColorRect" type="ColorRect" parent="Floor" unique_id=908696779]
+offset_left = -576.0
+offset_top = -20.0
+offset_right = 576.0
+offset_bottom = 20.0
+mouse_filter = 2
